@@ -6,7 +6,7 @@
 #    By: fpasquer <fpasquer@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/07/27 14:46:53 by fpasquer          #+#    #+#              #
-#    Updated: 2017/08/01 10:09:52 by fpasquer         ###   ########.fr        #
+#    Updated: 2017/10/16 14:03:55 by fpasquer         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,7 @@ fclean : clean
 	rm -rf $(NAME)
 	rm -rf $(NAME).dSYM
 	rm -rf $(OBJDIR)
-	make -C libfts fclean
+	make fclean -C libfts
 
 re : fclean All
 

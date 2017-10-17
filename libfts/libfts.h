@@ -6,7 +6,7 @@
 /*   By: fpasquer <fpasquer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/27 14:25:43 by fpasquer          #+#    #+#             */
-/*   Updated: 2017/08/04 22:00:39 by fpasquer         ###   ########.fr       */
+/*   Updated: 2017/10/17 15:05:53 by fpasquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char						*ft_strjoin(char const *s1, char const *s2);
 void						ft_memdel(void **ptr);
 char						*ft_strcpy(char *dest, char const *src);
 char						*ft_strncpy(char *dest, char const *src, size_t n);
-//int						ft_strcmp(char const *s1, char const *s2);
+int							ft_strcmp(char const *s1, char const *s2);
 //int						ft_strncmp(char const *s1, char const *s2, size_t n);
 char						*ft_strchr(char const *str, int c);
 char						*ft_strrchr(char const *str, int c);

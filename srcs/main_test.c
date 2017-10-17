@@ -6,7 +6,7 @@
 /*   By: fpasquer <fpasquer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/27 14:24:17 by fpasquer          #+#    #+#             */
-/*   Updated: 2017/08/04 22:43:44 by fpasquer         ###   ########.fr       */
+/*   Updated: 2017/10/17 15:13:36 by fpasquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -208,7 +208,7 @@ int							main(void)
 	printf("\tTab init = %s, %p\n", tab, ft_strncat(tab, "", LEN_TAB));
 	printf("\tTab init = %s, %p\n", tab, ft_strncat(tab, "tututhgdasjhgfgsa jdfg sj", LEN_TAB));
 	printf("\tTab init = %s, %p\n", tab, ft_strncat(tab, "", LEN_TAB));
-
+/*
 ///////////////////////////////////////////////////////////////////////////////
 //	ft_strjoin
 ///////////////////////////////////////////////////////////////////////////////
@@ -227,6 +227,18 @@ int							main(void)
 	ft_memdel((void**)&ret);
 	ft_memdel((void**)&ret11);
 	ft_memdel((void**)&ret12);
+*/
+
+///////////////////////////////////////////////////////////////////////////////
+//	ft_strcmp
+///////////////////////////////////////////////////////////////////////////////
+
+	printf("\nft_strcmp\n");
+	char					s1000[] = "Florian";
+	char					s2000[] = "Fhomas";
+
+	printf("\ts1000 = '%s' %s s2000 = '%s'\n", s1000, ft_strcmp(s1000, s2000) == 0 ? "==" : "!=", s2000);
+	printf("\ts1000 = '%s' %s s1000 = '%s'\n", s1000, ft_strcmp(s1000, s1000) == 0 ? "==" : "!=", s1000);
 
 ///////////////////////////////////////////////////////////////////////////////
 //	ft_strchr
@@ -293,12 +305,10 @@ int							main(void)
 	if ((fd = open("libfts/libfts.h", O_RDONLY)) > -1)
 	{
 		ft_cat(fd);
-		close(fd);
 	}
 	if ((fd = open("libfts/libfts.h", O_WRONLY)) > -1)
 	{
 		ft_cat(fd);
-		close(fd);
 	}
 	ft_cat(-1);
 	return (EXIT_SUCCESS);
